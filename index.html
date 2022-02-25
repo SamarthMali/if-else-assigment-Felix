@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body class="p-5">
+    <h1 class="text-center">Assigment</h1>
+
+
+    <!-- Question 1 -->
+    <h3 class="fs-3 pt-lg-5 pb-4">Q.1 Program for Finding Greater Between Two Number</h3>
+    <form class="mx-xl-5">
+        <input class="form-control mb-2 w-25" type="number" id="greater_input" required>
+        <input class="form-control mb-2 w-25" type="number" id="greater_input_2" required>
+        <button class="btn btn-primary" type=" submit" onclick="GreaterNum()">Check Greater number</button>
+    </form>
+    <br><br>
+    <hr>
+
+
+
+    <!-- Question 2 -->
+    <h3 class="fs-3 pb-4 pt-lg-4">Q.2 Program to Check Leap Year or Not Using If /Else</h3>
+    <form class="mx-xl-5">
+        <input class="form-control mb-2 w-25" type="number" id="leap_input" required>
+        <button class="btn btn-primary" type=" submit" onclick="leap_year()">Leap Year or not</button>
+    </form>
+    <br><br>
+    <hr>
+
+
+
+    <!-- Question 3 -->
+    <h3 class="fs-3 pb-4 pt-lg-4">Q.3 Calculate the Percentage of 5 Subjects</h3>
+    <form class="mx-xl-5">
+        <input class="form-control mb-2 w-25" type="number" id="s1" max="100" required>
+        <input class="form-control mb-2 w-25" type="number" id="s2" required>
+        <input class="form-control mb-2 w-25" type="number" id="s3" required>
+        <input class="form-control mb-2 w-25" type="number" id="s4" required>
+        <input class="form-control mb-2 w-25" type="number" id="s5" required>
+        <button class="btn btn-primary" type=" submit" onclick="Cal_Per()"> Check Percentage</button>
+    </form>
+    <br><br>
+    <hr>
+
+
+
+    <!-- Question 4 -->
+    <h3 class="fs-3 pb-4 pt-lg-4">Q.4 Check Number Is Positive or Negative</h3>
+
+    <form class="mx-xl-5">
+        <input class="form-control mb-2 w-25" type="number" id="n1" required>
+        <button class="btn btn-primary" type=" submit" onclick="checkPositiveNegative()">Check Negative or
+            Positive</button>
+    </form>
+
+    <br><br>
+    <hr>
+
+
+    <!-- Question 5 -->
+    <h1 class="fs-4  pb-4 pt-lg-4">Q.5 Find Greater No. Among the Given Three Number</h1>
+    <form class="mx-xl-5">
+        <input class="form-control mb-2 w-25" type="number" id="num1" required>
+        <input class="form-control mb-2 w-25" type="number" id="num2" required>
+        <input class="form-control mb-2 w-25" type="number" id="num3" required>
+        <button class="btn btn-primary" type="submit" onclick="greaterThreeNumber()"> Check Greater Number</button>
+    </form>
+
+<script src="index.js"></script>
+    <script>
+
+
+        // // Question 1 function
+        // function GreaterNum() {
+        //     let value1 = document.getElementById("greater_input").value;
+        //     let value2 = document.getElementById("greater_input_2").value;
+
+        //     if (value1 == "" && value2 == ""){
+        //         alert("Enter Something");
+        //         return false;
+        //     }
+
+        //     if (Number(value1) > Number(value2)) {
+        //         alert(Number(value1) + " is grater");
+        //     } else {
+        //         alert(Number(value2) + " is grater");
+        //     }
+        // }
+
+
+
+        // //Question 2 function
+        // function leap_year() {
+        //     let value1 = document.getElementById("leap_input").value;
+
+        //     if (value1 == "") {
+        //         alert("Enter Something");
+        //         return false;
+        //     }
+
+        //     if ((0 == value1 % 4) && (0 != value1 % 100) || (0 == value1 % 400)) {
+        //         alert(value1 + " is a leap year");
+        //     } else {
+        //         alert(value1 + " not a leap year");
+        //     }
+        // }
+
+
+
+
+        // // Question 3 function
+        // function Cal_Per() {
+        //     let sub1 = document.getElementById("s1").value;
+        //     let sub2 = document.getElementById("s2").value;
+        //     let sub3 = document.getElementById("s3").value;
+        //     let sub4 = document.getElementById("s4").value;
+        //     let sub5 = document.getElementById("s5").value;
+
+        //     if (sub1> 100 || sub1 < 0 || sub2> 100 || sub2 < 0 || sub3> 100 || sub4 < 0 || sub5> 100 || sub5 < 0) {
+        //         alert("Please enter valid data");
+        //         return false;
+        //     }
+
+        //     if (sub1, sub2, sub3, sub4, sub5 == "") {
+        //         alert("Enter Something");
+        //         return false;
+        //     }
+
+          
+
+        //     let Percentage = (Number(sub1) + Number(sub2) + Number(sub3) + Number(sub4) + Number(sub5)) / 500 * 100;
+        //     alert("Your Percentage is " + Math.floor(Percentage) + "%");
+        // }
+
+
+
+        // // Question 4 function
+        // function checkPositiveNegative() {
+        //     let num = document.getElementById("n1").value;
+
+        //     if (num == "") {
+        //         alert("Enter Something");
+        //         return false;
+        //     }
+
+        //     if (num > 0) {
+        //         alert("Positive");
+        //     } else {
+        //         alert("negative");
+        //     }
+
+        // }
+
+
+        // //  Question 5 function
+        // function greaterThreeNumber() {
+        //     let num1 = document.getElementById("num1").value;
+        //     let num2 = document.getElementById("num2").value;
+        //     let num3 = document.getElementById("num3").value;
+
+        //     console.log(typeof(num1));
+
+        //     if (Number(num1) >= Number(num2) && Number(num1) >= Number(num3)) {
+        //         alert(Number(num1) + " is greater number");
+        //     } else if ( Number(num2) >= Number(num1) && Number(num2) >= Number(num3)) {
+        //         alert(Number(num2) + " is greater number");
+        //     } else {
+        //         alert(Number(num3) + " is greater number");
+        //     } 
+        // }
+    </script>
+</body>
+
+</html>
